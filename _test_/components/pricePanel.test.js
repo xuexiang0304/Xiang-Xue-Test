@@ -22,4 +22,11 @@ describe("<PricePanel/> UI Component", () => {
       .find('div.saving')
       .text()
     ).toBe(""))
+
+  test("rendering price 100", () =>
+    expect(
+      shallow(<PricePanel price={100}/>)
+      .find('span.price')
+      .text()
+    ).toBe("100"))
 })

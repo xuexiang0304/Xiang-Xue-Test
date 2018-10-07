@@ -4,14 +4,14 @@ import {PageTemplate} from '../PageTemplate/pageTemplate.jsx'
 import HotelList from '../HotelList/hotelList.jsx'
 import './hotelDisplay.scss'
 
-const ResultSummary = ({count=0, searchStr=''}) =>
+export const ResultSummary = ({count=0, searchStr=''}) =>
   <div className='result-summary'>
     <span className='number'>{`${count} `}</span>
     <span className='description'>hotels in</span>
     <span className='region'>{` ${searchStr}`}</span>
   </div>
 
-const SortDropDown = ({options=[], onChange=f=>f, value='', label=''}) =>
+export const SortDropDown = ({options=[], onChange=f=>f, value='', label=''}) =>
   <div>
     <label className='sorting-label'>Sort by</label>
     <select className='sorting' defaultValue="default" onChange={onChange}>
