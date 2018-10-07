@@ -1,0 +1,7 @@
+/dist
+/_mocks_
+/_test_
+/node_modules
+/src/configureStore.js
+webpack.dev.config.js
+webpack.prod.config.js

@@ -1,0 +1,21 @@
+@mixin responsiveLogo($width){
+  width: $width
+}
+
+.navbar{
+  .logo{
+    @include responsiveLogo(20%);
+    img{
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .navbar{
+    justify-content: center;
+    .logo{
+      @include responsiveLogo(40%)
+    }
+  }
+}

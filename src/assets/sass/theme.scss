@@ -1,0 +1,17 @@
+$content-font: 'Comic Sans, Arial, Helvetica, sans-serif';
+
+html, body{
+  font-size: 100%;
+  font-family: $content-font;
+}
+//control the max-width of website content
+.wrapper{
+  max-width: 1001px;
+  margin: 0 auto;
+}
+
+@media(max-width:768px){
+  html, body{
+    font-size: 62.5%;
+  }
+}

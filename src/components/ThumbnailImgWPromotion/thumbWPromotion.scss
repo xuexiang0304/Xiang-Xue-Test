@@ -1,0 +1,20 @@
+$deal-text-color: red;
+$deal-text-background: white;
+
+.thumbnail{
+  .label-promotion{
+    position: absolute;
+    padding: 0.2rem;
+    margin-top: 10px;
+    margin-left: 0.25rem;
+    font-size: 0.8rem;
+    background: $deal-text-background;
+    color: $deal-text-color;
+    font-weight: bold;
+  }
+  .img-thumbnail{
+    width: 100%;
+    border: none;
+    border-radius: none;
+  }
+}

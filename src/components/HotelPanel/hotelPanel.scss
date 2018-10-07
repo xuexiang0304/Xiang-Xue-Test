@@ -1,0 +1,93 @@
+$detail-border-colour: #CACACA;
+$detail-rating-colour: #ffd615;
+$detail-address-colour: #929aab;
+$detail-freeCancellation-text-colour: green;
+$detail-roomName-text-colour: red;
+
+.hotel-panel{
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+
+  .hotel-thumbnail{
+    width:20%;
+    min-width: 150px;
+  }
+
+  .hotel-detail{
+    width: 80%;
+    max-width: calc(100% - 150px -2rem);
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $detail-border-colour;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    margin: 0 1rem;
+
+    .hotel-detail-basic{
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+
+      .hotel-detail-title-rating{
+        display: inline-flex;
+        width: 100%;
+
+        .hotel-detail-title{
+          font-size: 1.2rem;
+          max-width: 65%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+
+        .hotel-detail-rating{
+          color: $detail-rating-colour;
+          padding-left: 1rem;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          .fas, .far{
+            font-size: 0.8rem;
+          }
+        }
+      }
+
+      .hotel-detail-address{
+        font-size: 0.8rem;
+        color: $detail-address-colour;
+      }
+
+      .hotel-detail-roomName{
+        cursor: pointer;
+        text-decoration: underline;
+        font-size: 0.8rem;
+        margin: auto 0;
+        color:$detail-roomName-text-colour;
+      }
+
+      .freeCancellation{
+        color:$detail-freeCancellation-text-colour;
+        font-size:0.8rem;
+        height: 1rem;
+        margin-top:auto;
+      }
+    }
+
+    .hotel-detail-price{
+      width: 20%;
+      align-self: flex-end;
+      text-align: right;
+    }
+  }
+}
+
+@media(max-width: 768px){
+  .hotel-panel{
+    .hotel-thumbnail{
+      min-width: 90px;
+    }
+    .hotel-detail{
+      max-width: calc(100% - 90px - 2rem);
+    }
+  }
+}

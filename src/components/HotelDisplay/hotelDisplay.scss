@@ -1,0 +1,32 @@
+$result-summary-description-text-colour: grey;
+$sorting-dropdown-text-colour: grey;
+#hotels{
+  padding: 0 1rem;
+
+  .result-header{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5rem 1rem 0.5rem 0.25rem;
+
+    .result-summary{
+      .number,.region{
+        font-size: 1.1rem;
+      }
+      .description{
+        font-style: italic;
+        color: $result-summary-description-text-colour;
+      }
+    }
+
+    .sorting-label{
+      padding-right: 0.5rem;
+    }
+
+    .sorting{
+      color: $sorting-dropdown-text-colour;
+      font-size: 0.8rem;
+    }
+  }
+}

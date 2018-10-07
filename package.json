@@ -1,0 +1,79 @@
+{
+ "name": "Qantas-Hotel",
+ "scripts": {
+  "start": "webpack-dev-server --hot --inline --config webpack.dev.config.js",
+  "build": "webpack --config webpack.dev.config.js",
+  "product": "webpack --config webpack.prod.config.js",
+  "test": "jest"
+ },
+ "license": "ISC",
+ "version": "0.0.1",
+ "description": "code test for qantas hotel",
+ "jest": {
+  "moduleFileExtensions": [
+   "js",
+   "jsx"
+  ],
+  "moduleDirectories": [
+   "node_modules",
+   "src/components"
+  ],
+  "moduleNameMapper": {
+   "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+   "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js"
+  }
+ },
+ "dependencies": {
+  "react": "^16.4.0",
+  "react-dom": "^16.4.0",
+  "webpack": "^4.11.1"
+ },
+ "devDependencies": {
+  "@fortawesome/fontawesome-free": "^5.3.1",
+  "babel-core": "^6.26.3",
+  "babel-eslint": "^10.0.1",
+  "babel-jest": "^23.6.0",
+  "babel-loader": "^7.1.4",
+  "babel-polyfill": "^6.26.0",
+  "babel-preset-env": "^1.7.0",
+  "babel-preset-react": "^6.24.1",
+  "babel-preset-stage-2": "^6.24.1",
+  "bootstrap": "^4.1.1",
+  "bootstrap-loader": "^3.0.0",
+  "bootstrap-sass": "^3.3.7",
+  "copy-webpack-plugin": "^4.5.1",
+  "cross-fetch": "^2.2.2",
+  "css-loader": "^0.28.11",
+  "deep-freeze": "0.0.1",
+  "enzyme": "^3.7.0",
+  "enzyme-adapter-react-16": "^1.6.0",
+  "eslint": "^5.6.1",
+  "eslint-plugin-import": "^2.14.0",
+  "eslint-plugin-react": "^7.11.1",
+  "file-loader": "^1.1.11",
+  "html-loader": "^0.5.5",
+  "html-webpack-plugin": "^3.2.0",
+  "identity-obj-proxy": "^3.0.0",
+  "jest": "^23.6.0",
+  "jquery": "^3.3.1",
+  "mini-css-extract-plugin": "^0.4.0",
+  "node-sass": "^4.9.0",
+  "popper.js": "^1.14.3",
+  "react-addons-test-utils": "^15.6.2",
+  "react-bootstrap": "^0.32.1",
+  "react-redux": "^5.0.7",
+  "react-router-dom": "^4.3.1",
+  "react-test-renderer": "^16.5.2",
+  "redux": "^4.0.0",
+  "redux-logger": "^3.0.6",
+  "redux-thunk": "^2.3.0",
+  "regenerator-runtime": "^0.12.1",
+  "resolve-url-loader": "^2.3.0",
+  "sass-loader": "^7.0.3",
+  "style-loader": "^0.21.0",
+  "uglifyjs-webpack-plugin": "^1.2.5",
+  "url-loader": "^1.0.1",
+  "webpack-cli": "^3.0.3",
+  "webpack-dev-server": "^3.1.4"
+ }
+}
